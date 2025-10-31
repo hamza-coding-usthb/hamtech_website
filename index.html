@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1JMJQTHLZ0"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-1JMJQTHLZ0');
+</script>
+  <!-- don't forget to remove this >>(google site verification meta tag) tag, if you are using this page/code -->
+  <!-- don't forget to remove this >>(google site verification meta tag) tag, if you are using this page/code -->
+  <!-- don't forget to remove this >>(google site verification meta tag) tag, if you are using this page/code -->
+  <!-- don't forget to remove this >>(google site verification meta tag) tag, if you are using this page/code -->
+  <meta name="google-site-verification" content="zMNl24ruDnyqiliYwKNU_r09OkPCDKz0kMBtF9nqiCc" />
+  <!-- don't forget to remove this >>(google site verification meta tag) tag, if you are using this page/code -->
+  <!-- don't forget to remove this >>(google site verification meta tag) tag, if you are using this page/code -->
+  <!-- don't forget to remove this >>(google site verification meta tag) tag, if you are using this page/code -->
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#000" />
+  <meta name="description"
+    content="Hamza Taourirt | Portfolio, Visit and know about me & my projects/designs. I value simple content structure, clean design patterns, and thoughtful interactions." />
+  <meta name="keywords"
+    content="hamza taourirt,hamza taourirt portfolio,Hamza Taourirt Portfolio,hamzataourirt,hamza taourirt site,Hamza Taourirt Site,hamza taourirt me,hamza taourirt web,taourirt hamza github,hamzataourirtsite,hamzataourirtuiverse,uiverse,hamza taourirt uiverse,hamza taourirt fullstack developer,frontend developer,ml engineer, AI engineer, hamza taourirt algiers,taourirt algiers" />
+  <meta name="author" content="Hamza Taourirt" />
+  <meta property="og:image" content="https://www.hamzatrt.site/src/png/Preview-card-min.png" />
+  <meta property="og:title" content="Hamza Taourirt | Portfolio" />
+  <meta property="og:description"
+    content="I'm a Data scientist and all-rounded software developer. To know more visite my web page hamzataourirt.site." />
+
+  <meta property="og:url" content="https://hamzatrt.site" />
+  <meta property="og:site_name" content="Hamza Taourirt Portfolio" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@taourirt2525" />
+  <meta name="twitter:title" content="Taourirt Hamza | Portfolio" />
+  <meta name="twitter:description"
+  content="Hi! My name is Hamza. I'm a Data scientist and all-rounded software developer. To know more visite my web page hamzataourirt.site." />
+  <meta name="twitter:image" content="https://www.hamzatrt.site/src/png/Preview-card-min.png" />
+  <title>Taourirt Hamza | Portfolio</title>
+  <link rel="icon" type="image/x-icon" href="src/png/grin_smile.png" />
+  <!-- aos cdn -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!-- google fonts -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Passions+Conflict&family=Orbitron&family=Fira+Code&family=Six+Caps" />
+
+<body class="body light-mode">
+  <audio loop="" id="audioPlayer" style="display: none">
+    <source src="src/mp3/rain.mp3" type="audio/mp3" />
+  </audio>
+  <div id="preloader"></div>
+  <noscript>Allow Javascript</noscript>
+
+  <header>
+    <div class="cursor-inner" id="cursor-inner"></div>
+    <div class="cursor-outer" id="cursor-outer"></div>
+    
+    <div class="hamburger" id="hamburger" data-aos="fade">
+      <div class="hamburgerbase">
+        <button id="hamburger-button" onclick="hamburgerMenu()" tabindex="0" aria-label="Menu Button">
+          <span class="burger-bar" id="burger-bar1"></span>
+          <span class="burger-bar" id="burger-bar2"></span>
+          <span class="burger-bar" id="burger-bar3"></span>
+        </button>
+      </div>
+    </div>
+    <div class="navbar" id="navbar">
+      <div class="setting-container" id="setting-container">
+        <input type="checkbox" id="switchforsetting" onclick="settingtoggle()" />
+
+        <label for="switchforsetting" class="needtobeinvert invertapplied" id="labelforsetting" tabindex="0"
+          aria-label="settings for sound and appearance"></label>
+
+        <div class="visualmodetogglebuttoncontainer" id="visualmodetogglebuttoncontainer">
+          <input type="checkbox" id="switchforvisualmode" onclick="visualmode()" />
+          <label for="switchforvisualmode" id="labelforvisualmode" tabindex="0"
+            aria-label="switch appearance"></label>
+        </div>
+
+        <div class="soundtogglebuttoncontainer" id="soundtogglebuttoncontainer">
+          <input type="checkbox" id="switchforsound" onclick="playpause()" />
+          <label for="switchforsound" id="labelforsound" tabindex="0" aria-label="switch sound" class="needtobeinvert invertapplied"
+            class="needtobeinvert"></label>
+        </div>
+      </div>
+      
+      <div class="logo" tabindex="0" aria-label="Taourirt Hamza logo">
+        
+        <div class="logo-top">
+          <div class="hey">Welcome!</div>
+          <img src="src/png/avtar_H.png" alt="animation-head" id="nav-avatar"/>
+        </div>
+      </div>
+        <ul class="navbar-tabs-ul">
+          <li class="home activeThistab navbar-tabs-li" data-aos="fade-down" data-aos-delay="100">
+            <a href="#home" tabindex="0" aria-label="Home menu button">
+              Home
+            </a>
+          </li>
+
+          <li class="about navbar-tabs-li" data-aos="fade-down" data-aos-delay="300">
+            <a href="#about" aria-label="about menu button">
+              About Me
+            </a>
+          </li>
+
+          <li class="skills navbar-tabs-li" data-aos="fade-down" data-aos-delay="500">
+            <a href="#skills" aria-label="skills menu button">
+              Skills
+            </a>
+          </li>
+
+          <li class="projects navbar-tabs-li" data-aos="fade-down" data-aos-delay="700">
+            <a href="#projects" aria-label="projects menu button">
+              Projects
+            </a>
+          </li>
+        </ul>
+        
+    </div>
+    
+  </header>
+  <!-- header ends here -->
+
+  <main>
+
+    <!-- hamburger -->
+    <div class="mobiletogglemenu" id="mobiletogglemenu">
+      <ul class="mobile-navbar-tabs-ul" id="mobile-ul">
+        <li id="home-mobile-tab" class="mobile-navbar-tabs-li home activeThismobiletab" onclick="hidemenubyli()">
+          <a href="#home" tabindex="0" aria-label="Home menu button">
+            Home
+          </a>
+        </li>
+
+        <li id="aboutme-mobile-tab" class="mobile-navbar-tabs-li about" onclick="hidemenubyli()">
+          <a href="#about" tabindex="0" aria-label="about menu button">
+            About Me
+          </a>
+        </li>
+        <li id="skills-mobile-tab" class="mobile-navbar-tabs-li skills" onclick="hidemenubyli()">
+          <a href="#skills" tabindex="0" aria-label="skills menu button">
+            Skills
+          </a>
+        </li>
+        <li id="projects-mobile-tab" class="mobile-navbar-tabs-li projects" onclick="hidemenubyli()">
+          <a href="#projects" tabindex="0" aria-label="projects menu button">
+            Projects
+          </a>
+        </li>
+        <li id="settings-mobile-tab" class="mobile-navbar-tabs-li settings" onclick="hidemenubyli()">
+          <a href="#projects" tabindex="0" aria-label="projects menu button">
+            Projects
+          </a>
+        </li>
+        
+      </ul>
+    </div>
+    <!-- mobile toggle menu ends -->
+
+    <section class="landing-page-container" id="home">
+      <div class="blob"></div>
+
+      <div class="text-content">
+        <article id="hello-friend" data-aos="fade-up" data-aos-delay="0">
+          <p class="jello">H</p>
+          <p class="jello">e</p>
+          <p class="jello">l</p>
+          <p class="jello">l</p>
+          <p class="jello">o</p>
+          &nbsp;
+          <p class="jello">W</p>
+          <p class="jello">o</p>
+          <p class="jello">r</p>
+          <p class="jello">l</p>
+          <p class="jello">d</p>
+          <p class="jello">!</p>
+          &nbsp;
+          <p class="jello">I</p>
+          <p class="jello">'</p>
+          <p class="jello">m</p>
+        </article>
+        <article id="name" data-aos="fade-up" data-aos-delay="200">
+          <p class="jello">H</p>
+          <p class="jello">a</p>
+          <p class="jello">m</p>
+          <p class="jello">z</p>
+          <p class="jello">a</p>
+          &nbsp;
+          <p class="jello">T</p>
+          <p class="jello">a</p>
+          <p class="jello">o</p>
+          <p class="jello">u</p>
+          <p class="jello">r</p>
+          <p class="jello">i</p>
+          <p class="jello">r</p>
+          <p class="jello">t</p>
+          <p class="jello">.</p>
+        </article>
+
+        <article id="work" data-aos="fade-up" data-aos-delay="400">
+          <div>
+            <p class="jello">I</p>
+          </div>
+          <div>
+            <p class="jello">m</p>
+            <p class="jello">a</p>
+            <p class="jello">k</p>
+            <p class="jello">e</p>
+          </div>
+          <div>
+            <p class="jello">A</p>
+            <p class="jello">I</p>
+          </div>
+          <div>
+            <p class="jello">p</p>
+            <p class="jello">o</p>
+            <p class="jello">w</p>
+            <p class="jello">e</p>
+            <p class="jello">r</p>
+            <p class="jello">e</p>
+            <p class="jello">d</p>
+          </div>
+          <div>
+            <p class="jello">s</p>
+            <p class="jello">o</p>
+            <p class="jello">f</p>
+            <p class="jello">t</p>
+            <p class="jello">w</p>
+            <p class="jello">a</p>
+            <p class="jello">r</p>
+            <p class="jello">e</p>
+            <p class="jello">.</p>
+          </div>
+        </article>
+        <p id="info-para" data-aos="fade-up" data-aos-delay="600">
+          Machine Learning engineer with experience in generative AI, natural language processing, 
+          and computer vision. I love problem solving, collaboration and making products.<br />
+          <br />
+          I value efficiency, product adaptability, and
+          evolutive design.
+        </p>
+        <div class="contact-btn-div" data-aos="fade-up" data-aos-delay="800">
+          <a href="mailto:taourirt.hamza.etu@gmail.com" tabindex="-1">
+            <button class="letsTalkBtn">
+              <p class="letsTalkBtn-text">Contact me!</p>
+              <span class="letsTalkBtn-BG"></span>
+            </button></a>
+        </div>
+        <!-- contact-btn-div -->
+      </div>
+     
+    </section>
+    <!-- landing page ends here -->
+    <section class="about-section-container" id="about" data-aos="fade-up">
+      <div class="about-section">
+        
+        <div class="section-heading">
+          <p class="sectionHeadingP"></p>
+          <h2 class="section-heading-article" tabindex="0" aria-label="About me heading">
+            About Me
+          </h2>
+          <p class="sectionHeadingP"></p>
+        </div>
+
+        <div class="info-dp-section">
+          <div class="about-info">
+            <p tabindex="0">
+              Hi! My name is Hamza. I'm a data scientist and software developer. I love creating useful technologies that make life easier for everyone. My interest in artificial intelligence started in 2018 when I decided to create video games for fun.
+            </p>
+            <br />
+            <p tabindex="0">
+              my passion evolved toward machine learning, I started
+              enjoying data science and analysis. Creating custom AI models and embedding them in custom designed software, especially web apps.
+            </p>
+            <br />
+            <p tabindex="0">
+              My main focus these days is building AutoMl models to allow professionals of any field to use AI with little to no coding. 
+            </p>
+             <!-- Resume button -->
+      <button class="resume-btn" id="resume-btn" onclick="openURL()">
+        <div class="sign">
+          <svg viewBox="0 0 640 512">
+            <path
+              d="M144 480C64.5 480 0 415.5 0 336c0-62.8 40.2-116.2 96.2-135.9c-.1-2.7-.2-5.4-.2-8.1c0-88.4 71.6-160 160-160c59.3 0 111 32.2 138.7 80.2C409.9 102 428.3 96 448 96c53 0 96 43 96 96c0 12.2-2.3 23.8-6.4 34.6C596 238.4 640 290.1 640 352c0 70.7-57.3 128-128 128H144zm79-167l80 80c9.4 9.4 24.6 9.4 33.9 0l80-80c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-39 39V184c0-13.3-10.7-24-24-24s-24 10.7-24 24V318.1l-39-39c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9z" />
+          </svg>
+        </div>
+
+        <div class="text">Resume</div>
+      </button>
+          </div>
+
+          <div class="dp" data-aos="fade-up">
+            <img src="src/webp/hamza.webp" alt="Hamza Taourirt" tabindex="0" aria-label="image of vinod" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- about section ends  -->
+
+    <section class="skills-section-container" id="skills">
+      <div class="skills-section">
+        <div class="section-heading" data-aos="fade-up">
+          <p class="sectionHeadingP"></p>
+          <h2 class="section-heading-article" tabindex="0" aria-label="skills heading">
+            Skills
+          </h2>
+          <p class="sectionHeadingP"></p>
+        </div>
+
+        <div class="frontend-dev-section">
+          <h3 class="frontend-dev-heading" data-aos="fade-up" tabindex="0"
+            aria-label="As a frontend a developer these are the skills i have">
+            Tech Stack
+          </h3>
+          <ul class="tech-stack-wrapper">
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/Python.png" alt="python language skill" class="tech-stack-logo" />
+              <span class="tooltip">Python</span>
+            </li>
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/PHP.png" alt="php skill" class="tech-stack-logo" />
+              <span class="tooltip">PHP</span>
+            </li>
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/JavaScript.png" alt="JavaScript skill" class="tech-stack-logo" />
+              <span class="tooltip">JavaScript</span>
+            </li>
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/sql.png" alt="SQL skill" class="tech-stack-logo" />
+              <span class="tooltip">SQL</span>
+            </li>
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/PyTorch.png" alt="Html skill" class="tech-stack-logo" />
+              <span class="tooltip">PyTorch</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/tensorflow.png" alt="tensorflow skill" class="tech-stack-logo" />
+              <span class="tooltip">TensorFlow</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/scikit-learn.png" alt="scikit-learn skill" class="tech-stack-logo" />
+              <span class="tooltip">Scikit-learn</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/Matplotlib.png" alt="matplotlib skill" class="tech-stack-logo" />
+              <span class="tooltip">Matplotlib</span>
+            </li>
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/MySQL.png" alt="mysql skill" class="tech-stack-logo" />
+              <span class="tooltip">MySQL</span>
+            </li>
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/PostgresSQL.png" alt="PostgresSQL sill" class="tech-stack-logo" />
+              <span class="tooltip">PostgreSQL</span>
+            </li>
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/MongoDB.png" alt="mongoDB skill" class="tech-stack-logo" />
+              <span class="tooltip">Mongo DB</span>
+            </li>
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/Tailwind_CSS.png" alt="tailwind skill" class="tech-stack-logo" />
+              <span class="tooltip">TAILWIND</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/reactlogo.png" alt="react skill" class="tech-stack-logo" />
+              <span class="tooltip">REACTJS</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/nextlogo.png" alt="nextjs skill" class="tech-stack-logo" />
+              <span class="tooltip">NEXTJS</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/node.png" alt="nodejs skill" class="tech-stack-logo" />
+              <span class="tooltip">NODEJS</span>
+            </li>
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/Laravel.png" alt="laravel skill" class="tech-stack-logo" />
+              <span class="tooltip">Laravel</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/Django.png" alt="django skill" class="tech-stack-logo" />
+              <span class="tooltip">Django</span>
+            </li>
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/FastAPI.png" alt="github skill" class="tech-stack-logo needtobeinvert" />
+              <span class="tooltip">FastAPI</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/gitlogo.png" alt="github skill" class="tech-stack-logo needtobeinvert invertapplied" />
+              <span class="tooltip">GIT</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/Docker.png" alt="docker skill" class="tech-stack-logo" />
+              <span class="tooltip">Docker</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/Kubernetes.png" alt="kubernetes skill" class="tech-stack-logo" />
+              <span class="tooltip">Kubernetes</span>
+            </li>
+
+            
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/Digital_Ocean.png" alt="degitalOcean skill" class="tech-stack-logo" />
+              <span class="tooltip">DigitalOcean</span>
+            </li>
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/AWS.png" alt="aws skill" class="tech-stack-logo" />
+              <span class="tooltip">AWS</span>
+            </li>
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/Tableau.png" alt="tableau skill" class="tech-stack-logo" />
+              <span class="tooltip">Tableau</span>
+            </li>
+
+            
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- skills section ends -->
+    <section class="projects-section-container" id="projects">
+      <div class="projects-section-div">
+        <div class="section-heading" data-aos="fade-up">
+          <p class="sectionHeadingP"></p>
+          <h2 class="section-heading-article" tabindex="0" aria-label="My projects starts from here">
+            Projects
+          </h2>
+          <p class="sectionHeadingP"></p>
+        </div>
+        <div class="project-boxes-div">
+          <div data-aos="fade-up" class="project-box-wrapper">
+            <div class="project-box project-box2" id="project-box2">
+              <div class="info-div">
+                <img src="src/webp/icon.webp" alt="atomic asher website favicon" class="faviconforProject" />
+                <article class="ProjectHeading">MediumAI</article>
+                <p class="ProjectDescription">
+                  MediumAI: an online publishing platform where anyone can read and write articles. It features AI capabilities of proofreading, brainstorming assisstance, fact checker, thumbnai generator among others.
+                </p>
+                <div class="project-buttons">
+                  <a href="https://github.com/
+                  hamza-coding-usthb/mediumClone" target="_blank" class="github-redirect"
+                    aria-label="Visit Pexelicons on GitHub">
+                    <img src="src/svg/github.svg" alt="github redirect button" />
+                  </a>
+                </div>
+              </div>
+              <div class="image-div">
+                <img src="src/webp/medium.webp" alt="atomicasher website preview image" />
+              </div>
+            </div>
+          </div>
+          <!-- ---------------------- -->
+          <div data-aos="fade-up" class="project-box-wrapper">
+            <div class="project-box project-box2" id="project-box2">
+              <div class="info-div">
+                <img src="src/ico/icon.ico" alt="stopscams website favicon" class="faviconforProject" />
+                <article class="ProjectHeading">AuditGPT</article>
+                <p class="ProjectDescription">
+                  AuditGPT: An AI-powered React-Native platform for helping accountants perform financial, compliance and performance audits.
+                </p>
+                <div class="project-buttons">
+                  <a href="https://github.com/hamza-coding-usthb/financeApp-dashboard" target="_blank" class="github-redirect"
+                    aria-label="Visit Pexelicons on GitHub">
+                    <img src="src/svg/github.svg" alt="github redirect button" />
+                  </a>
+                </div>
+              </div>
+              <div class="image-div">
+                <img src="src/webp/under.webp" alt="stopscams website preview image" />
+              </div>
+            </div>
+          </div>
+          <!-- ---------------------- -->
+          <div data-aos="fade-up" class="project-box-wrapper">
+            <div class="project-box project-box2" id="project-box2">
+              <div class="info-div">
+                <img src="src/ico/icon.ico" alt="notesync website favicon" class="faviconforProject" />
+                <article class="ProjectHeading">Neurodet</article>
+                <p class="ProjectDescription">
+                  Neurodet: A desktop app for health professional to manage patients with neurodegenerative diseases. It features a 3DCNN model able to detectthe kind of neurodegenerative disease and stage of it.
+                </p>
+                <div class="project-buttons">
+                  <a href="https://github.com/hamza-coding-usthb/neurodet" target="_blank" class="github-redirect"
+                    aria-label="Visit Pexelicons on GitHub">
+                    <img src="src/svg/github.svg" alt="github redirect button" />
+                  </a>
+                </div>
+              </div>
+              <div class="image-div">
+                <img src="src/webp/neurodet.webp" alt="NoteSync website preview image" />
+              </div>
+            </div>
+          </div>
+          <!-- ---------------------- -->
+          <div data-aos="fade-up" class="project-box-wrapper">
+            <div class="project-box project-box2" id="project-box2">
+              <div class="info-div">
+                <img src="src/ico/icon.ico" alt="withyourdog website favicon" class="faviconforProject" />
+                <article class="ProjectHeading">ClimateAnalytics</article>
+                <p class="ProjectDescription">
+                  ClimateAnalytics: Data Mining platform Plateform for the analysis of longitudinal climate and soil data and apply. Allows data clining, transformation, and the application of ML and DM algorithms.
+                </p>
+                <div class="project-buttons">
+                  <a href="https://github.com/hamza-coding-usthb/Climate_dataMining" target="_blank" class="github-redirect"
+                    aria-label="Visit Pexelicons on GitHub">
+                    <img src="src/svg/github.svg" alt="github redirect button" />
+                  </a>
+                </div>
+              </div>
+              <div class="image-div">
+                <img src="src/webp/climate.webp" alt="withyourdog website preview image" />
+              </div>
+            </div>
+          </div>
+          <!-- ---------------------- -->
+          <div data-aos="fade-up" class="project-box-wrapper">
+            <div class="project-box project-box2" id="project-box2">
+              <div class="info-div">
+                <img src="src/webp/icon.webp" alt="pexelicon website favicon" class="faviconforProject" />
+                <article class="ProjectHeading">YOLOCAN</article>
+                <p class="ProjectDescription">
+                  YOLOCAN: Web app using Yolo model to recognize a cosmetics product and find the price range for it on the internet.
+                </p>
+                <div class="project-buttons">
+                  <a href="https://github.com/hamza-coding-usthb/Computer_vision_interface" target="_blank" class="github-redirect"
+                    aria-label="Visit Pexelicons on GitHub">
+                    <img src="src/svg/github.svg" alt="github redirect button" />
+                  </a>
+                  
+                </div>
+              </div>
+              <div class="image-div">
+                <img src="src/webp/under.webp" alt="Pexelicon website preview image" />
+              </div>
+            </div>
+          </div>
+          <!-- --------------------- -->
+          <div data-aos="fade-up" class="project-box-wrapper">
+            <div class="project-box project-box2" id="project-box2">
+              <div class="info-div">
+                <img src="src/webp/icon.webp" alt="lunetra website favicon" class="faviconforProject" />
+                <article class="ProjectHeading">BERTsensei</article>
+                <p class="ProjectDescription">
+                  BERTsensei: A cross-platform teacher assisstant app able to help in preparing syllabuses, lessons, quizes and grading. </p>
+                <div class="project-buttons">
+                  <a href="https://github.com/hamza-coding-usthb/QuizzApp" target="_blank" class="github-redirect"
+                    aria-label="Visit Pexelicons on GitHub">
+                    <img src="src/svg/github.svg" alt="github redirect button" />
+                  </a>
+                </div>
+              </div>
+              <div class="image-div">
+                <img src="src/webp/under.webp" alt="Lunetra website preview image" />
+              </div>
+            </div>
+          </div>
+          <!-- --------------------- -->
+
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- main ends here -->
+
+  <footer id="footer">
+    <button class="fas" id="backtotopbutton" onclick="scrolltoTopfunction()">
+      <article aria-label="Back to top" style="color: gold;">
+        <i class="fas fa-hand-point-up" ></i>
+      </article>
+    </button>
+    <div class="footer-background">
+      <div class="footer-blob"></div>
+    </div>
+    <div class="footer-foreground">
+      <div class="footercontainer">
+        <div class="two-words">
+          <article tabindex="0" aria-label="Quote on Lifelong Learning by Ernest Hemingway">
+            <blockquote class="hemingway-literary-quote">
+              <q>We are all apprentices in a craft where no one ever becomes a master.</q>
+              <div class="hemingway-author">Ernest Hemingway</div>
+            </blockquote>
+          </article>
+        </div>
+        <div class="social-media-container">
+          <div class="getintouch-heading">
+            <article>Contact me!</article>
+          </div>
+          <div class="logos">
+            <a href="https://medium.com/@taourirt.hamza.etu/" target="_blank" tabindex="0"
+              aria-label="My Medium Profile">
+              <svg role="img" viewBox="0 0 24 24" class="SocialHandle">
+                <title>Medium</title>
+                <path 
+                  fill="currentColor" 
+                  d="M4.21 0A4.201 4.201 0 0 0 0 4.21v15.58A4.201 4.201 0 0 0 4.21 24h15.58A4.201 4.201 0 0 0 24 19.79v-1.093c-.137.013-.278.02-.422.02-2.577 0-4.027-2.146-4.09-4.832a7.592 7.592 0 0 1 .022-.708c.093-1.186.475-2.241 1.105-3.022a3.885 3.885 0 0 1 1.395-1.1c.468-.237 1.127-.367 1.664-.367h.023c.101 0 .202.004.303.01V4.211A4.201 4.201 0 0 0 19.79 0Zm.198 5.583h4.165l3.588 8.435 3.59-8.435h3.864v.146l-.019.004c-.705.16-1.063.397-1.063 1.254h-.003l.003 10.274c.06.676.424.885 1.063 1.03l.02.004v.145h-4.923v-.145l.019-.005c.639-.144.994-.353 1.054-1.03V7.267l-4.745 11.15h-.261L6.15 7.569v9.445c0 .857.358 1.094 1.063 1.253l.02.004v.147H4.405v-.147l.019-.004c.705-.16 1.065-.397 1.065-1.253V6.987c0-.857-.358-1.094-1.064-1.254l-.018-.004zm19.25 3.668c-1.086.023-1.733 1.323-1.813 3.124H24V9.298a1.378 1.378 0 0 0-.342-.047Zm-1.862 3.632c-.1 1.756.86 3.239 2.204 3.634v-3.634z" />
+              </svg>
+            </a>
+            <a href="https://www.kaggle.com/hamzataourirt" target="_blank" tabindex="0"
+   aria-label="My Kaggle">
+  <svg width="64" height="64" viewBox="0 0 32 32" class="SocialHandle">
+    <title>Kaggle</title>
+    <path 
+      fill="currentColor" 
+      transform="matrix(.527027 0 0 .527027 -30.632288 -22.45559)" 
+      d="M105.75 102.968c-.06.238-.298.357-.713.357H97.1c-.477 0-.89-.208-1.248-.625L82.746 86.028l-3.655 3.477v12.93c0 .595-.298.892-.892.892h-6.152c-.595 0-.892-.297-.892-.892V43.5c0-.593.297-.89.892-.89H78.2c.594 0 .892.298.892.89v36.288l15.692-15.87c.416-.415.832-.624 1.248-.624h8.204c.356 0 .593.15.713.445.12.357.09.624-.09.803L88.274 80.588l17.297 21.488c.237.238.297.535.18.892" 
+    />
+  </svg>
+</a>
+              
+
+            <a href="https://www.linkedin.com/in/hamza-taourirt-199a472b2/" target="_blank"
+              aria-label="My Linkdin"><svg class="SocialHandle" viewBox="0 0 448 512">
+                <path
+                  d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
+              </svg></a>
+
+            <a href="https://github.com/hamza-coding-usthb" target="_blank" aria-label="My github"><svg viewBox="0 0 496 512"
+                class="SocialHandle">
+                <path
+                  d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+              </svg></a>
+
+            <a href="mailto:taourirt.hamza.etu@gmail.com" target="_blank" aria-label="My G mail"><svg id="GmailLogo"
+                viewBox="0 0 512 512">
+                <path
+                  d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z" />
+              </svg></a>
+              <a href="https://www.instagram.com/hamza_trt_1998/" target="_blank" tabindex="0"
+              aria-label="My instagram"><svg viewBox="0 0 448 512" class="SocialHandle">
+                <path
+                  d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+              </svg></a>
+          </div>
+        </div>
+      
+        <div class="footer-bottom">
+          <article>
+             by Taourirt Hamza
+            | 2025
+          </article>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer ends here -->
+
+  <script src="main.js"></script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <script>
+    function openURL() {
+      var url = "src/pdf/Resume_Taourirt_Hamza.pdf";
+
+      window.open(url, "_blank");
+    }
+  </script>
+
+  <script>
+    const cursorInner = document.getElementById("cursor-inner");
+    const cursorOuter = document.getElementById("cursor-outer");
+    const links = document.querySelectorAll("a,label,button");
+
+    document.addEventListener("mousemove", function (e) {
+      const posX = e.clientX;
+      const posY = e.clientY;
+
+      cursorInner.style.left = `${posX}px`;
+      cursorInner.style.top = `${posY}px`;
+
+      // cursorOuter.style.left = `${posX}px`;
+      // cursorOuter.style.top = `${posY}px`;
+
+      cursorOuter.animate(
+        {
+          left: `${posX}px`,
+          top: `${posY}px`,
+        },
+        { duration: 500, fill: "forwards" }
+      );
+
+      links.forEach((link) => {
+        link.addEventListener("mouseenter", () => {
+          cursorInner.classList.add("hover");
+          cursorOuter.classList.add("hover");
+        });
+        link.addEventListener("mouseleave", () => {
+          cursorInner.classList.remove("hover");
+          cursorOuter.classList.remove("hover");
+        });
+      });
+    });
+  </script>
+ <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+<script>
+  kofiWidgetOverlay.draw('hamzataourirt', {
+    'type': 'floating-chat',
+    'floating-chat.donateButton.text': 'Support me',
+    'floating-chat.donateButton.background-color': '#91c2f0',
+    'floating-chat.donateButton.text-color': '#fff'
+  });
+</script>
+</body>
+
+</html>
+
