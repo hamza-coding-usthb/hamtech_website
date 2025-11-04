@@ -17,6 +17,7 @@ Welcome to the repository for my personal portfolio website. This site is design
 -   **Skills Overview**: A visual representation of my technical skills and tech stack.
 -   **Direct Contact & Resume**: Easy access to my resume and contact information.
 
+-   **Sitemap**: Includes an XML sitemap for better search engine optimization.
 ## 🛠️ Tech Stack
 
 This website was built using fundamental web technologies:
