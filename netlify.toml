@@ -1,0 +1,14 @@
+[build]
+  publish = "."  # This means "current directory"
+
+[[redirects]]
+  from = "https://hamtech-ai.netlify.app/*"
+  to = "https://hamzataourirt.netlify.app/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://hamtech-ai.netlify.app/*"
+  to = "https://hamzataourirt.netlify.app/:splat"
+  status = 301
+  force = true
