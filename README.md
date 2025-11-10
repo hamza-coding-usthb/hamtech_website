@@ -2,9 +2,9 @@
 
 Welcome to the repository for my personal portfolio website. This site is designed to showcase my skills, projects, and professional experience as a data scientist and software developer.
 
-**Live Demo:** [**www.hamtech.netlify.app**](https://www.hamzataourirt.netlify.app/)
+**Live Demo:** [**hamzataourirt.netlify.app**](https://hamzataourirt.netlify.app/)
 
-![Portfolio Preview](https://www.hamzataourirt.netlify.app/src/png/Preview-card-min.png)
+![Portfolio Preview](https://hamzataourirt.netlify.app/src/png/Preview-card-min.png)
 
 ## 🚀 Features
 
