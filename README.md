@@ -4,7 +4,7 @@ Welcome to the repository for my personal portfolio website. This site is design
 
 **Live Demo:** [**www.hamtech.netlify.app**](https://www.hamzataourirt.netlify.app/)
 
-![Portfolio Preview](https://www.hamzataourirt.netlify/src/png/Preview-card-min.png)
+![Portfolio Preview](https://www.hamzataourirt.netlify.app/src/png/Preview-card-min.png)
 
 ## 🚀 Features
 
